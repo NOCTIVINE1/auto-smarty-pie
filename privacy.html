@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | Auto Smarty Pie</title>
+
+<meta name="description"
+     content="Privacy Policy for Auto Smarty Pie. Learn how we collect, use, protect and handle information submitted through our website, enquiry forms, WhatsApp and advertising platforms.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://autosmartypie.in/privacy-policy.html">
+
+  <link rel="icon"
+        href="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg"
+        type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #0a0c12;
+      --ink-soft: #0e1119;
+      --panel: #12151f;
+      --panel-2: #171b27;
+
+      --text: #f3f1ec;
+      --text-soft: #cdd2dd;
+      --muted: #9299a8;
+
+      --line: rgba(255,255,255,.09);
+      --line-strong: rgba(255,255,255,.16);
+
+      --flame: #e0405f;
+      --flame-deep: #7c1230;
+      --flame-glow: rgba(224,64,95,.30);
+
+      --gold: #e7b34f;
+      --mint: #7fe0b8;
+
+      --container: 900px;
+      --ease: cubic-bezier(.22,.9,.32,1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at 80% -5%,
+          rgba(224,64,95,.15),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 5% 20%,
+          rgba(231,179,79,.06),
+          transparent 28%
+        ),
+        var(--ink);
+
+      color: var(--text);
+      font-family:
+        "Inter",
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(
+        var(--container),
+        calc(100% - 36px)
+      );
+
+      margin-inline: auto;
+    }
+
+    /* NAVIGATION */
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(9,11,17,.88);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-weight: 800;
+    }
+
+    .logo {
+      width: 43px;
+      height: 43px;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+
+      border: 1px solid var(--line-strong);
+
+      box-shadow:
+        0 10px 30px var(--flame-glow);
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand-name {
+      display: block;
+
+      font-family: "Fraunces", Georgia, serif;
+
+      font-size: 15px;
+      line-height: 1.1;
+    }
+
+    .brand-tagline {
+      display: block;
+
+      margin-top: 4px;
+
+      color: var(--muted);
+
+      font-size: 9.5px;
+      font-weight: 700;
+
+      letter-spacing: .04em;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 42px;
+
+      padding: 10px 16px;
+
+      border: 1px solid var(--line-strong);
+
+      border-radius: 11px;
+
+      color: var(--text-soft);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      transition:
+        .25s ease;
+    }
+
+    .back:hover {
+      border-color: var(--gold);
+      color: white;
+
+      transform: translateY(-2px);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 85px 0 50px;
+
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 7px 14px 7px 10px;
+
+      border:
+        1px solid rgba(224,64,95,.38);
+
+      border-radius: 999px;
+
+      background:
+        rgba(224,64,95,.08);
+
+      color: #f0aebb;
+
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .eyebrow::before {
+      content: "";
+
+      width: 6px;
+      height: 6px;
+
+      border-radius: 50%;
+
+      background: var(--gold);
+    }
+
+    h1 {
+      margin-top: 20px;
+
+      font-family:
+        "Fraunces",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(42px, 7vw, 68px);
+
+      line-height: 1.02;
+
+      letter-spacing: -.025em;
+
+      font-weight: 600;
+    }
+
+    .hero p {
+      max-width: 650px;
+
+      margin: 20px auto 0;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .updated {
+      margin-top: 18px;
+
+      color: #737b8a;
+
+      font-size: 11px;
+    }
+
+    /* CONTENT */
+
+    main {
+      padding-bottom: 90px;
+    }
+
+    .policy {
+      padding: 42px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,.035),
+          rgba(255,255,255,.015)
+        );
+
+      box-shadow:
+        0 30px 80px rgba(0,0,0,.25);
+    }
+
+    .policy + .policy {
+      margin-top: 18px;
+    }
+
+    .policy h2 {
+      margin-bottom: 14px;
+
+      font-family:
+        "Fraunces",
+        Georgia,
+        serif;
+
+      font-size: 26px;
+
+      line-height: 1.2;
+
+      font-weight: 600;
+
+      color: white;
+    }
+
+    .policy h3 {
+      margin:
+        25px 0 8px;
+
+      font-family:
+        "Fraunces",
+        Georgia,
+        serif;
+
+      font-size: 18px;
+
+      font-weight: 600;
+
+      color: #fff;
+    }
+
+    .policy p {
+      margin-bottom: 13px;
+
+      color: var(--text-soft);
+
+      font-size: 13.5px;
+    }
+
+    .policy ul {
+      margin:
+        10px 0 18px 20px;
+
+      color: var(--text-soft);
+    }
+
+    .policy li {
+      margin-bottom: 8px;
+
+      padding-left: 4px;
+
+      font-size: 13.5px;
+    }
+
+    .policy strong {
+      color: white;
+    }
+
+    .policy a {
+      color: #efafbf;
+
+      text-decoration:
+        underline;
+
+      text-decoration-color:
+        rgba(239,175,191,.35);
+
+      text-underline-offset: 3px;
+    }
+
+    .policy a:hover {
+      color: var(--gold);
+    }
+
+    .highlight {
+      margin: 20px 0;
+
+      padding: 18px 20px;
+
+      border-left:
+        3px solid var(--gold);
+
+      border-radius: 0 12px 12px 0;
+
+      background:
+        rgba(231,179,79,.06);
+
+      color: var(--text-soft);
+
+      font-size: 13px;
+    }
+
+    .contact-box {
+      margin-top: 20px;
+
+      padding: 22px;
+
+      border:
+        1px solid rgba(224,64,95,.25);
+
+      border-radius: 16px;
+
+      background:
+        rgba(224,64,95,.05);
+    }
+
+    .contact-box p {
+      margin-bottom: 5px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top:
+        1px solid var(--line);
+
+      padding:
+        35px 0 50px;
+
+      color: #7e8796;
+
+      font-size: 11px;
+
+      text-align: center;
+    }
+
+    footer strong {
+      color: var(--text-soft);
+    }
+
+    .footer-links {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 16px;
+
+      margin-bottom: 14px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 620px) {
+
+      .container {
+        width:
+          min(
+            100% - 28px,
+            var(--container)
+          );
+      }
+
+      .nav-inner {
+        min-height: 68px;
+      }
+
+      .brand-name {
+        font-size: 13px;
+      }
+
+      .brand-tagline {
+        font-size: 8px;
+      }
+
+      .logo {
+        width: 39px;
+        height: 39px;
+      }
+
+      .back {
+        min-height: 38px;
+        padding: 8px 12px;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding:
+          58px 0 35px;
+      }
+
+      h1 {
+        font-size:
+          clamp(38px, 13vw, 54px);
+      }
+
+      .hero p {
+        font-size: 13px;
+      }
+
+      .policy {
+        padding: 25px 20px;
+
+        border-radius: 18px;
+      }
+
+      .policy h2 {
+        font-size: 23px;
+      }
+
+      .policy p,
+      .policy li {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header class="nav">
+    <div class="container nav-inner">
+
+```
+  <a
+    class="brand"
+    href="https://autosmartypie.in/"
+    aria-label="Auto Smarty Pie home"
+  >
+
+    <div class="logo">
+      <img
+        src="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg"
+        alt="Auto Smarty Pie logo"
+        width="43"
+        height="43"
+      >
+    </div>
+
+    <div>
+      <span class="brand-name">
+        Auto Smarty Pie
+      </span>
+
+      <span class="brand-tagline">
+        DIGITAL GROWTH PARTNER
+      </span>
+    </div>
+
+  </a>
+
+  <a
+    class="back"
+    href="https://autosmartypie.in/"
+  >
+    ← Back to Website
+  </a>
+
+</div>
+```
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+```
+<div class="container">
+
+  <span class="eyebrow">
+    Your Privacy Matters
+  </span>
+
+  <h1>
+    Privacy Policy
+  </h1>
+
+  <p>
+    This Privacy Policy explains how Auto Smarty Pie
+    collects, uses and protects information provided
+    through our website, enquiry forms and related
+    communication channels.
+  </p>
+
+  <div class="updated">
+    Last updated: September 14, 2026
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- POLICY -->
+
+  <main>
+
+```
+<div class="container">
+
+
+  <!-- 1 -->
+
+  <section class="policy">
+
+    <h2>
+      1. Introduction
+    </h2>
+
+    <p>
+      Auto Smarty Pie ("Auto Smarty Pie", "we", "us",
+      or "our") provides digital growth services for
+      local and physical businesses, including website
+      development, Google Business Profile services,
+      SEO, social media services, advertising support,
+      lead and enquiry systems, and business tools.
+    </p>
+
+    <p>
+      This Privacy Policy explains how we handle
+      information that you provide when you visit our
+      website or contact us regarding our services.
+    </p>
+
+    <div class="highlight">
+      By using our website or submitting an enquiry,
+      you acknowledge that you have read and understood
+      this Privacy Policy.
+    </div>
+
+  </section>
+
+
+  <!-- 2 -->
+
+  <section class="policy">
+
+    <h2>
+      2. Information We May Collect
+    </h2>
+
+    <p>
+      Depending on how you interact with us, we may
+      collect information such as:
+    </p>
+
+    <ul>
+
+      <li>
+        Your name.
+      </li>
+
+      <li>
+        Mobile or telephone number.
+      </li>
+
+      <li>
+        Email address.
+      </li>
+
+      <li>
+        Business name.
+      </li>
+
+      <li>
+        Business category or type.
+      </li>
+
+      <li>
+        Information about the digital services you
+        are interested in.
+      </li>
+
+      <li>
+        Information that you voluntarily provide in
+        an enquiry, contact or booking form.
+      </li>
+
+      <li>
+        Messages and information you send to us through
+        WhatsApp, email or other communication channels.
+      </li>
+
+      <li>
+        Basic technical information associated with
+        website usage, such as browser or device
+        information, where technically available.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- 3 -->
+
+  <section class="policy">
+
+    <h2>
+      3. How We Use Your Information
+    </h2>
+
+    <p>
+      We may use the information you provide to:
+    </p>
+
+    <ul>
+
+      <li>
+        Respond to your enquiry or request.
+      </li>
+
+      <li>
+        Contact you about the services you requested.
+      </li>
+
+      <li>
+        Understand your business requirements.
+      </li>
+
+      <li>
+        Recommend an appropriate service or package.
+      </li>
+
+      <li>
+        Prepare quotations, proposals or service
+        information.
+      </li>
+
+      <li>
+        Provide and manage services after you become
+        a customer.
+      </li>
+
+      <li>
+        Communicate about project requirements,
+        updates and support.
+      </li>
+
+      <li>
+        Improve our website, services and customer
+        experience.
+      </li>
+
+      <li>
+        Prevent fraud, abuse or misuse of our website
+        and services.
+      </li>
+
+      <li>
+        Comply with applicable legal or regulatory
+        requirements.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- 4 -->
+
+  <section class="policy">
+
+    <h2>
+      4. Meta Lead Ads and Advertising
+    </h2>
+
+    <p>
+      We may use Meta advertising products, including
+      Facebook and Instagram advertising and Meta Lead
+      Ads, to promote our services.
+    </p>
+
+    <p>
+      If you submit your information through a Meta
+      Lead Ad, the information you provide may be
+      transmitted to us so that we can respond to your
+      enquiry and understand your requirements.
+    </p>
+
+    <p>
+      We use information received through advertising
+      lead forms for legitimate business communication,
+      enquiry handling and service-related purposes.
+    </p>
+
+    <p>
+      Advertising platforms such as Meta may separately
+      process information according to their own
+      privacy policies and terms.
+    </p>
+
+  </section>
+
+
+  <!-- 5 -->
+
+  <section class="policy">
+
+    <h2>
+      5. WhatsApp and Other Communication Channels
+    </h2>
+
+    <p>
+      We may communicate with customers and prospects
+      through WhatsApp, telephone, email, Instagram or
+      other channels that you choose to use.
+    </p>
+
+    <p>
+      Information shared through these third-party
+      communication services may also be subject to
+      the privacy policies and terms of those services.
+    </p>
+
+  </section>
+
+
+  <!-- 6 -->
+
+  <section class="policy">
+
+    <h2>
+      6. Sharing of Information
+    </h2>
+
+    <p>
+      We do not sell your personal information.
+    </p>
+
+    <p>
+      We may share or provide access to information
+      where reasonably necessary to operate our business,
+      provide requested services, communicate with you,
+      or comply with legal obligations.
+    </p>
+
+    <p>
+      This may include trusted service providers or
+      technology platforms used for hosting, website
+      operation, communication, analytics, advertising,
+      payment processing or other business functions.
+    </p>
+
+    <p>
+      We aim to share only the information reasonably
+      necessary for the relevant purpose.
+    </p>
+
+  </section>
+
+
+  <!-- 7 -->
+
+  <section class="policy">
+
+    <h2>
+      7. Website and Technical Information
+    </h2>
+
+    <p>
+      Our website may automatically receive certain
+      technical information when you visit it. This can
+      include information such as browser type, device
+      type, operating system, approximate usage activity,
+      referring pages and basic technical logs.
+    </p>
+
+    <p>
+      Such information may be used to maintain website
+      security, understand website performance and
+      improve the user experience.
+    </p>
+
+  </section>
+
+
+  <!-- 8 -->
+
+  <section class="policy">
+
+    <h2>
+      8. Cookies and Similar Technologies
+    </h2>
+
+    <p>
+      Our website or third-party services used on the
+      website may use cookies or similar technologies
+      where applicable.
+    </p>
+
+    <p>
+      Cookies may be used for functions such as
+      remembering preferences, understanding website
+      usage, improving performance, analytics or
+      advertising measurement.
+    </p>
+
+    <p>
+      You can usually control or restrict cookies
+      through your browser settings. Disabling certain
+      cookies may affect some website functionality.
+    </p>
+
+  </section>
+
+
+  <!-- 9 -->
+
+  <section class="policy">
+
+    <h2>
+      9. Data Security
+    </h2>
+
+    <p>
+      We take reasonable measures to protect information
+      against unauthorized access, misuse, alteration,
+      disclosure or destruction.
+    </p>
+
+    <p>
+      However, no internet transmission or electronic
+      storage system can be guaranteed to be completely
+      secure. Therefore, we cannot guarantee absolute
+      security of information transmitted through the
+      internet.
+    </p>
+
+  </section>
+
+
+  <!-- 10 -->
+
+  <section class="policy">
+
+    <h2>
+      10. Data Retention
+    </h2>
+
+    <p>
+      We retain information for as long as reasonably
+      necessary for the purpose for which it was
+      collected, including responding to enquiries,
+      providing services, maintaining business records,
+      resolving disputes and meeting applicable legal
+      obligations.
+    </p>
+
+    <p>
+      When information is no longer reasonably required,
+      we may delete, anonymize or otherwise dispose of
+      it where appropriate.
+    </p>
+
+  </section>
+
+
+  <!-- 11 -->
+
+  <section class="policy">
+
+    <h2>
+      11. Third-Party Websites and Services
+    </h2>
+
+    <p>
+      Our website may contain links to third-party
+      websites, platforms or services, including social
+      media, communication and sample websites.
+    </p>
+
+    <p>
+      We are not responsible for the privacy practices,
+      security or content of third-party websites.
+    </p>
+
+    <p>
+      We recommend reviewing the privacy policy of any
+      third-party service before submitting personal
+      information to it.
+    </p>
+
+  </section>
+
+
+  <!-- 12 -->
+
+  <section class="policy">
+
+    <h2>
+      12. Your Choices
+    </h2>
+
+    <p>
+      You may choose not to provide certain information.
+      However, some information may be necessary for us
+      to respond to an enquiry or provide a requested
+      service.
+    </p>
+
+    <p>
+      If you no longer want to receive non-essential
+      promotional communication from us, you can contact
+      us and request that we stop such communication,
+      subject to applicable legal and operational
+      requirements.
+    </p>
+
+  </section>
+
+
+  <!-- 13 -->
+
+  <section class="policy">
+
+    <h2>
+      13. Children's Privacy
+    </h2>
+
+    <p>
+      Our services are intended for businesses and
+      business-related users. Our website is not
+      specifically directed toward children.
+    </p>
+
+    <p>
+      We do not knowingly request personal information
+      from children for the purpose of providing our
+      business services.
+    </p>
+
+  </section>
+
+
+  <!-- 14 -->
+
+  <section class="policy">
+
+    <h2>
+      14. Changes to This Privacy Policy
+    </h2>
+
+    <p>
+      We may update this Privacy Policy from time to
+      time to reflect changes in our services, technology,
+      business practices or applicable requirements.
+    </p>
+
+    <p>
+      When changes are made, the updated version will be
+      published on this page and the "Last updated" date
+      may be changed accordingly.
+    </p>
+
+  </section>
+
+
+  <!-- 15 -->
+
+  <section class="policy">
+
+    <h2>
+      15. Contact Us
+    </h2>
+
+    <p>
+      If you have questions about this Privacy Policy
+      or want to ask about the information we hold about
+      you, contact Auto Smarty Pie using the details
+      below.
+    </p>
+
+    <div class="contact-box">
+
+      <p>
+        <strong>Auto Smarty Pie</strong>
+      </p>
+
+      <p>
+        Digital Growth Partner for Local & Physical Businesses
+      </p>
+
+      <p>
+        Phone:
+        <a href="tel:+918528077325">
+          +91 8528077325
+        </a>
+      </p>
+
+      <p>
+        WhatsApp:
+        <a
+          href="https://wa.me/918528077325"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contact us on WhatsApp
+        </a>
+      </p>
+
+      <p>
+        Website:
+        <a href="https://autosmartypie.in/">
+          autosmartypie.in
+        </a>
+      </p>
+
+      <p>
+        Instagram:
+        <a
+          href="https://www.instagram.com/auto_smarty_pie/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @auto_smarty_pie
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+</div>
+```
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+```
+<div class="container">
+
+  <div class="footer-links">
+
+    <a href="https://autosmartypie.in/">
+      Home
+    </a>
+
+    <a href="https://autosmartypie.in/inq.html">
+      Enquiry
+    </a>
+
+    <a href="https://autosmartypie.in/privacy-policy.html">
+      Privacy Policy
+    </a>
+
+    <a
+      href="https://www.instagram.com/auto_smarty_pie/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+
+  </div>
+
+  <div>
+    © 2026
+    <strong>Auto Smarty Pie</strong>.
+    All rights reserved.
+  </div>
+
+</div>
+```
+
+  </footer>
+
+</body>
+</html>
