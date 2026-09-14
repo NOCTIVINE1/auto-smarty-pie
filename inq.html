@@ -38,8 +38,8 @@
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85">
 
 <!-- Favicon -->
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="icon" href="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,6 +69,7 @@
   "name": "Auto Smarty Pie",
   "url": "https://autosmartypie.in/",
   "telephone": "+91-8528077325",
+  "logo": "https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg",
   "areaServed": { "@type": "Country", "name": "India" },
   "sameAs": ["https://www.instagram.com/auto_smarty_pie/"]
 }
@@ -136,11 +137,11 @@
   }
   .logo{display:flex;align-items:center;gap:12px;font-weight:800}
   .logo-mark{
-    width:42px;height:42px;border-radius:13px;
-    background:linear-gradient(135deg,var(--flame-deep),var(--flame));
-    color:#fff;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:700;font-size:14px;
+    width:42px;height:42px;border-radius:13px;overflow:hidden;flex:none;
+    border:1px solid var(--line-strong);
     box-shadow:0 8px 22px var(--flame-glow);
   }
+  .logo-mark img{width:100%;height:100%;object-fit:cover;display:block}
   .logo span:last-child{font-size:15px;font-family:"Fraunces",serif}
   .header .insta{color:#f0aebb;font-weight:700;font-size:13px;transition:color .2s ease}
   .header .insta:hover{color:var(--gold)}
@@ -280,7 +281,7 @@
 <body>
 <header class="header">
   <a href="index.html" class="logo">
-    <span class="logo-mark">ASP</span><span>Auto Smarty Pie</span>
+    <span class="logo-mark"><img src="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg" alt="Auto Smarty Pie logo" width="42" height="42"></span><span>Auto Smarty Pie</span>
   </a>
   <a class="insta" href="https://www.instagram.com/auto_smarty_pie/" target="_blank" rel="noopener">@auto_smarty_pie ↗</a>
 </header>
@@ -373,10 +374,10 @@
                 <option value="SHOP SOFTWARE">Shop Management Software — ₹2,999+</option>
               </optgroup>
               <optgroup label="Complete Packages">
-                <option value="START">START — ₹6,999 one-time</option>
-                <option value="GROW">GROW — ₹9,999 + ₹2,500/month</option>
-                <option value="LEAD">LEAD — ₹14,999 + ₹3,500/month</option>
-                <option value="GROWTH PRO">GROWTH PRO — ₹19,999 + ₹7,999/month</option>
+                <option value="START">Essential — ₹6,999 one-time</option>
+                <option value="GROW">Growth — ₹9,999 + ₹2,500/month</option>
+                <option value="LEAD">Accelerate — ₹14,999 + ₹3,500/month</option>
+                <option value="GROWTH PRO">Scale — ₹19,999 + ₹7,999/month</option>
               </optgroup>
             </select>
             <div class="price-note">Your selection from the previous page is automatically selected here. You can change it if needed.</div>
@@ -388,7 +389,7 @@
             <textarea id="message" name="message" placeholder="Your goal, current problem, website, Instagram, or anything useful"></textarea>
           </div>
 
-          <button class="submit" type="submit" id="submitBtn">Send Enquiry on WhatsApp →</button>
+          <button class="submit" type="submit" id="submitBtn">Get My Growth Plan on WhatsApp →</button>
           <div class="small">By submitting, you'll be redirected to WhatsApp with your enquiry details ready to send.</div>
         </div>
       </form>
@@ -402,10 +403,10 @@ const params = new URLSearchParams(window.location.search);
 const raw = params.get("service") || params.get("package") || "";
 
 const catalog = {
-  "START":"START — ₹6,999 one-time",
-  "GROW":"GROW — ₹9,999 + ₹2,500/month",
-  "LEAD":"LEAD — ₹14,999 + ₹3,500/month",
-  "GROWTH PRO":"GROWTH PRO — ₹19,999 + ₹7,999/month",
+  "START":"Essential — ₹6,999 one-time",
+  "GROW":"Growth — ₹9,999 + ₹2,500/month",
+  "LEAD":"Accelerate — ₹14,999 + ₹3,500/month",
+  "GROWTH PRO":"Scale — ₹19,999 + ₹7,999/month",
   "WEBSITE":"Website — ₹3,999+",
   "GOOGLE BUSINESS PROFILE":"Google Business Profile — ₹1,499 setup",
   "LOCAL SEO":"Local SEO — ₹2,499 setup",
@@ -520,7 +521,7 @@ Instagram: @auto_smarty_pie`;
 
   setTimeout(function(){
     submitBtn.disabled = false;
-    submitBtn.textContent = "Send Enquiry on WhatsApp →";
+    submitBtn.textContent = "Get My Growth Plan on WhatsApp →";
   }, 1800);
 });
 </script>
