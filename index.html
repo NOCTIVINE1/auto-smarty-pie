@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en-IN">
 <head>
   <meta charset="UTF-8">
@@ -70,8 +70,8 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=85">
   <meta name="twitter:image:alt" content="Auto Smarty Pie digital growth services">
 
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="icon" href="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg">
 
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="dns-prefetch" href="https://images.unsplash.com">
@@ -108,7 +108,7 @@
     "@id": "https://autosmartypie.in/#organization",
     "name": "Auto Smarty Pie",
     "url": "https://autosmartypie.in/",
-    "logo": "https://autosmartypie.in/favicon.png",
+    "logo": "https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg",
     "sameAs": ["https://www.instagram.com/auto_smarty_pie/"]
   }
   </script>
@@ -287,10 +287,10 @@
     .logo {
       width: 44px; height: 44px; display: grid; place-items: center;
       border-radius: 13px; position: relative; overflow: hidden; flex: 0 0 auto;
-      background: linear-gradient(135deg, var(--flame-deep), var(--flame));
+      border: 1px solid var(--line-strong);
       box-shadow: 0 8px 24px var(--flame-glow);
     }
-    .logo span { position: relative; z-index: 2; font-family: "Fraunces", serif; font-size: 15px; font-weight: 700; color: #fff; }
+    .logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .brand-name { display: block; font-size: 14.5px; line-height: 1.1; font-family: "Fraunces", serif; letter-spacing: 0; }
     .brand-tagline { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; font-weight: 600; }
 
@@ -515,6 +515,13 @@
     .package-list li::before { content: "✓"; position: absolute; left: 0; color: var(--mint); font-weight: 700; }
     .package .btn { width: 100%; margin-top: 22px; }
 
+    .trust-row {
+      display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: center;
+      margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--line);
+      color: var(--text-soft); font-size: 12.5px; font-weight: 600;
+    }
+    .trust-row span { display: flex; align-items: center; gap: 6px; }
+
     /* =========================================================
        WHO NEEDS IT
        ========================================================= */
@@ -736,7 +743,7 @@
     <div class="container nav-inner">
 
       <a class="brand" href="/" aria-label="Auto Smarty Pie home">
-        <div class="logo" aria-hidden="true"><span>ASP</span></div>
+        <div class="logo"><img src="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg" alt="Auto Smarty Pie logo" width="44" height="44"></div>
         <div>
           <span class="brand-name">Auto Smarty Pie</span>
           <span class="brand-tagline">DIGITAL GROWTH PARTNER</span>
@@ -1028,16 +1035,16 @@
         <div class="section-head reveal">
           <div>
             <span class="eyebrow">Best value</span>
-            <h2>Complete growth packages.</h2>
+            <h2>Pick your growth stage.</h2>
           </div>
-          <p>For businesses that want more than a single service. The higher the package, the more of the customer journey we manage.</p>
+          <p>Every package builds on the one before it. Start where your business is today — move up whenever you're ready for more.</p>
         </div>
 
         <div class="package-grid reveal-stagger">
 
           <article class="package reveal" style="--i:0">
-            <h3>Start</h3>
-            <div class="package-description">Build your digital foundation.</div>
+            <h3>Essential</h3>
+            <div class="package-description">Your foundation — live in days, not months.</div>
             <div class="package-price">₹6,999</div>
             <div class="package-monthly">ONE-TIME</div>
             <ul class="package-list">
@@ -1050,17 +1057,17 @@
               <li>Google Business Profile setup</li>
               <li>1 revision round</li>
             </ul>
-            <a class="btn" href="inq.html?service=START">Choose Start</a>
+            <a class="btn" href="inq.html?service=START">Get Essential →</a>
           </article>
 
           <article class="package featured reveal" style="--i:1">
-            <span class="package-badge">Popular</span>
-            <h3>Grow</h3>
-            <div class="package-description">Improve visibility and keep growing.</div>
+            <span class="package-badge">Most popular</span>
+            <h3>Growth</h3>
+            <div class="package-description">Get found first when customers search nearby.</div>
             <div class="package-price">₹9,999</div>
             <div class="package-monthly">+ ₹2,500 / MONTH</div>
             <ul class="package-list">
-              <li>Everything in Start</li>
+              <li>Everything in Essential</li>
               <li>4–6 page website</li>
               <li>Advanced on-page SEO</li>
               <li>Local SEO</li>
@@ -1069,16 +1076,16 @@
               <li>Competitor monitoring</li>
               <li>Monthly reporting</li>
             </ul>
-            <a class="btn" href="inq.html?service=GROW">Choose Grow</a>
+            <a class="btn" href="inq.html?service=GROW">Start Growing →</a>
           </article>
 
           <article class="package reveal" style="--i:2">
-            <h3>Lead</h3>
-            <div class="package-description">Generate and optimize customer enquiries.</div>
+            <h3>Accelerate</h3>
+            <div class="package-description">Turn ad spend into tracked, real enquiries.</div>
             <div class="package-price">₹14,999</div>
             <div class="package-monthly">+ ₹3,500 / MONTH</div>
             <ul class="package-list">
-              <li>Everything in Grow</li>
+              <li>Everything in Growth</li>
               <li>6–8 page premium website</li>
               <li>Google Ads setup</li>
               <li>Ads management</li>
@@ -1087,12 +1094,13 @@
               <li>Campaign optimization</li>
               <li>Monthly performance report</li>
             </ul>
-            <a class="btn" href="inq.html?service=LEAD">Choose Lead</a>
+            <a class="btn" href="inq.html?service=LEAD">Get More Leads →</a>
           </article>
 
           <article class="package reveal" style="--i:3">
-            <h3>Growth Pro</h3>
-            <div class="package-description">Social media + ads + leads in one system.</div>
+            <span class="package-badge" style="background:transparent;border:1px solid var(--line-strong);color:var(--text-soft)">Full system</span>
+            <h3>Scale</h3>
+            <div class="package-description">One partner running every channel for you.</div>
             <div class="package-price">₹19,999</div>
             <div class="package-monthly">+ ₹7,999 / MONTH</div>
             <ul class="package-list">
@@ -1105,9 +1113,15 @@
               <li>Lead tracking &amp; reporting</li>
               <li>Strategy + ongoing support</li>
             </ul>
-            <a class="btn" href="inq.html?service=GROWTH%20PRO">Choose Growth Pro</a>
+            <a class="btn" href="inq.html?service=GROWTH%20PRO">Scale My Business →</a>
           </article>
 
+        </div>
+
+        <div class="trust-row reveal">
+          <span>✓ Buy only what you need — no forced bundles</span>
+          <span>✓ One partner instead of five vendors</span>
+          <span>✓ Clear, upfront pricing — no surprise fees</span>
         </div>
 
         <p class="note reveal">* Advertising budget is separate from management fees. Specific results such as rankings, leads or sales are not guaranteed because outcomes depend on market, budget, offer, competition and the business's follow-up.</p>
