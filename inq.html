@@ -6,8 +6,8 @@
 
 <!-- Primary SEO -->
 <title>Business Enquiry | Auto Smarty Pie — Digital Growth Services</title>
-<meta name="description" content="Send Auto Smarty Pie your business enquiry for websites, Google Business Profile, local SEO, Google Ads, social media, lead systems and business software for local businesses.">
-<meta name="keywords" content="Auto Smarty Pie enquiry, digital marketing enquiry, website development enquiry, local SEO, Google Business Profile, Google Ads, social media management, lead generation, business website India">
+<meta name="description" content="Send Auto Smarty Pie your business enquiry for websites, Google Business Profile, local SEO, Google Ads, social media, video content, lead systems and business software for local businesses.">
+<meta name="keywords" content="Auto Smarty Pie enquiry, digital marketing enquiry, website development enquiry, local SEO, Google Business Profile, Google Ads, social media management, video production, reels, long videos, lead generation, business website India">
 <meta name="author" content="Auto Smarty Pie">
 <meta name="publisher" content="Auto Smarty Pie">
 <meta name="robots" content="noindex, follow">
@@ -34,7 +34,7 @@
 <!-- X / Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Business Enquiry | Auto Smarty Pie">
-<meta name="twitter:description" content="Start your enquiry for websites, SEO, Google visibility, ads, social media and lead systems.">
+<meta name="twitter:description" content="Start your enquiry for websites, SEO, Google visibility, ads, social media, video content and lead systems.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85">
 
 <!-- Favicon -->
@@ -61,6 +61,7 @@
   }
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,460 +71,2093 @@
   "url": "https://autosmartypie.in/",
   "telephone": "+91-8528077325",
   "logo": "https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg",
-  "areaServed": { "@type": "Country", "name": "India" },
-  "sameAs": ["https://www.instagram.com/auto_smarty_pie/"]
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "sameAs": [
+    "https://www.instagram.com/auto_smarty_pie/"
+  ]
 }
 </script>
 
 <style>
-  :root{
-    --ink:#0a0c12;
-    --ink-soft:#0e1119;
-    --panel:#12151f;
-    --panel-2:#171b27;
 
-    --text:#f3f1ec;
-    --text-soft:#cdd2dd;
-    --muted:#8890a0;
+:root{
+  --ink:#0a0c12;
+  --ink-soft:#0e1119;
+  --panel:#12151f;
+  --panel-2:#171b27;
 
-    --line:rgba(255,255,255,.09);
-    --line-strong:rgba(255,255,255,.18);
+  --text:#f3f1ec;
+  --text-soft:#cdd2dd;
+  --muted:#8890a0;
 
-    --flame:#e0405f;
-    --flame-deep:#7c1230;
-    --flame-glow:rgba(224,64,95,.35);
+  --line:rgba(255,255,255,.09);
+  --line-strong:rgba(255,255,255,.18);
 
-    --gold:#e7b34f;
-    --mint:#7fe0b8;
+  --flame:#e0405f;
+  --flame-deep:#7c1230;
+  --flame-glow:rgba(224,64,95,.35);
 
-    --ease:cubic-bezier(.22,.9,.32,1);
-    --shadow:0 30px 90px rgba(0,0,0,.45);
+  --gold:#e7b34f;
+  --mint:#7fe0b8;
+
+  --ease:cubic-bezier(.22,.9,.32,1);
+  --shadow:0 30px 90px rgba(0,0,0,.45);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--text);
+  min-height:100vh;
+  line-height:1.6;
+
+  background:
+    radial-gradient(
+      circle at 86% -6%,
+      rgba(224,64,95,.16),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 4% 10%,
+      rgba(231,179,79,.07),
+      transparent 26%
+    ),
+    var(--ink);
+
+  -webkit-font-smoothing:antialiased;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+h1,
+h2{
+  font-family:"Fraunces",Georgia,serif;
+  font-weight:700;
+  letter-spacing:-.01em;
+}
+
+::selection{
+  background:var(--flame);
+  color:#fff;
+}
+
+:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header{
+  height:78px;
+
+  background:rgba(9,11,17,.75);
+
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+
+  border-bottom:1px solid var(--line);
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 clamp(20px,5vw,70px);
+
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  font-weight:800;
+}
+
+.logo-mark{
+  width:42px;
+  height:42px;
+
+  border-radius:13px;
+
+  overflow:hidden;
+  flex:none;
+
+  border:1px solid var(--line-strong);
+
+  box-shadow:
+    0 8px 22px var(--flame-glow);
+}
+
+.logo-mark img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+  display:block;
+}
+
+.logo span:last-child{
+  font-size:15px;
+  font-family:"Fraunces",serif;
+}
+
+.header .insta{
+  color:#f0aebb;
+  font-weight:700;
+  font-size:13px;
+
+  transition:
+    color .2s ease;
+}
+
+.header .insta:hover{
+  color:var(--gold);
+}
+
+/* =========================
+   WRAPPER
+   ========================= */
+
+.wrap{
+  width:min(1080px,92%);
+  margin:0 auto;
+
+  padding:60px 0 80px;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  text-align:center;
+
+  max-width:760px;
+
+  margin:0 auto 40px;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  background:rgba(224,64,95,.1);
+
+  color:#f0aebb;
+
+  border:1px solid rgba(224,64,95,.4);
+
+  border-radius:999px;
+
+  padding:7px 14px 7px 10px;
+
+  font-size:12px;
+  font-weight:700;
+}
+
+.eyebrow::before{
+  content:"";
+
+  width:6px;
+  height:6px;
+
+  border-radius:50%;
+
+  background:var(--gold);
+}
+
+.hero h1{
+  font-size:clamp(32px,5.6vw,54px);
+
+  line-height:1.04;
+
+  letter-spacing:-.02em;
+
+  margin:18px 0 12px;
+
+  font-weight:600;
+}
+
+.hero h1 .accent{
+  font-style:italic;
+
+  font-weight:600;
+
+  background:
+    linear-gradient(
+      95deg,
+      var(--gold) 0%,
+      var(--flame) 60%,
+      #f3c5d0 100%
+    );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+
+  color:transparent;
+}
+
+.hero p{
+  color:var(--muted);
+
+  font-size:15.5px;
+
+  line-height:1.75;
+}
+
+/* =========================
+   GRID
+   ========================= */
+
+.grid{
+  display:grid;
+
+  grid-template-columns:.82fr 1.45fr;
+
+  gap:22px;
+
+  align-items:start;
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card{
+  background:var(--panel);
+
+  border:1px solid var(--line);
+
+  border-radius:24px;
+
+  box-shadow:var(--shadow);
+
+  overflow:hidden;
+}
+
+/* =========================
+   SELECTED SERVICE
+   ========================= */
+
+.selected{
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(231,179,79,.16),
+      transparent 45%
+    ),
+    linear-gradient(
+      150deg,
+      var(--flame-deep),
+      #3a0d1c
+    );
+
+  color:#fff;
+
+  padding:30px;
+
+  min-height:340px;
+
+  position:relative;
+
+  isolation:isolate;
+}
+
+.selected:after{
+  content:"";
+
+  position:absolute;
+
+  width:220px;
+  height:220px;
+
+  border-radius:50%;
+
+  right:-90px;
+  bottom:-100px;
+
+  background:rgba(255,255,255,.06);
+
+  z-index:-1;
+}
+
+.selected .tag{
+  color:#ffd7e0;
+  background:rgba(255,255,255,.1);
+  border-color:rgba(255,255,255,.2);
+}
+
+.selected h2{
+  font-size:28px;
+
+  line-height:1.1;
+
+  margin:18px 0 10px;
+
+  font-weight:600;
+
+  opacity:0;
+
+  transform:translateY(6px);
+
+  transition:
+    opacity .4s var(--ease),
+    transform .4s var(--ease);
+}
+
+.selected h2.ready{
+  opacity:1;
+  transform:none;
+}
+
+.selected p{
+  color:#f8dfe5;
+
+  line-height:1.65;
+
+  font-size:13.5px;
+}
+
+.details{
+  margin-top:26px;
+
+  display:grid;
+
+  gap:12px;
+}
+
+.detail{
+  display:flex;
+
+  gap:10px;
+
+  align-items:flex-start;
+
+  font-size:13px;
+
+  color:#fff;
+}
+
+.dot{
+  width:7px;
+  height:7px;
+
+  border-radius:50%;
+
+  background:var(--gold);
+
+  margin-top:6px;
+
+  flex:none;
+}
+
+.tag{
+  display:inline-block;
+
+  border:1px solid var(--line);
+
+  background:rgba(255,255,255,.04);
+
+  color:var(--gold);
+
+  border-radius:999px;
+
+  padding:7px 11px;
+
+  font-size:10.5px;
+
+  font-weight:700;
+
+  letter-spacing:.04em;
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+.form-card{
+  padding:32px;
+}
+
+.form-head{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:15px;
+
+  align-items:flex-start;
+
+  margin-bottom:26px;
+}
+
+.form-head h2{
+  font-size:24px;
+
+  letter-spacing:-.02em;
+
+  font-weight:600;
+}
+
+.form-head p{
+  font-size:13px;
+
+  color:var(--muted);
+
+  margin-top:5px;
+}
+
+.form-grid{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:17px;
+}
+
+.field{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:7px;
+}
+
+.field.full{
+  grid-column:1/-1;
+}
+
+label{
+  font-size:12px;
+
+  font-weight:700;
+
+  color:var(--text-soft);
+}
+
+input,
+select,
+textarea{
+  width:100%;
+
+  border:1px solid var(--line-strong);
+
+  background:var(--panel-2);
+
+  border-radius:13px;
+
+  padding:13px 14px;
+
+  font:inherit;
+
+  color:var(--text);
+
+  outline:none;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color:#5f6779;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--gold);
+
+  box-shadow:
+    0 0 0 4px rgba(231,179,79,.12);
+}
+
+select{
+  color-scheme:dark;
+}
+
+textarea{
+  min-height:105px;
+
+  resize:vertical;
+}
+
+/* =========================
+   SERVICE BOX
+   ========================= */
+
+.service-box{
+  grid-column:1/-1;
+
+  padding:15px;
+
+  border-radius:16px;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid var(--line);
+}
+
+.service-box .service-label{
+  font-size:12px;
+
+  font-weight:700;
+
+  margin-bottom:9px;
+
+  color:var(--text-soft);
+}
+
+.price-note{
+  font-size:11px;
+
+  color:var(--muted);
+
+  margin-top:8px;
+
+  line-height:1.65;
+}
+
+/* =========================
+   VIDEO FIELDS
+   ========================= */
+
+#videoFields{
+  animation:
+    fadeVideo .3s ease;
+}
+
+@keyframes fadeVideo{
+  from{
+    opacity:0;
+    transform:translateY(-5px);
   }
 
-  *{box-sizing:border-box;margin:0;padding:0}
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
 
-  body{
-    font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    color:var(--text);
-    min-height:100vh;
-    line-height:1.6;
-    background:
-      radial-gradient(circle at 86% -6%, rgba(224,64,95,.16), transparent 32%),
-      radial-gradient(circle at 4% 10%, rgba(231,179,79,.07), transparent 26%),
-      var(--ink);
-    -webkit-font-smoothing:antialiased;
+/* =========================
+   SUBMIT
+   ========================= */
+
+.submit{
+  grid-column:1/-1;
+
+  border:0;
+
+  border-radius:14px;
+
+  padding:16px 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--flame-deep),
+      var(--flame)
+    );
+
+  color:#fff;
+
+  font-weight:700;
+
+  font-size:15px;
+
+  cursor:pointer;
+
+  box-shadow:
+    0 16px 40px var(--flame-glow);
+
+  position:relative;
+
+  overflow:hidden;
+
+  isolation:isolate;
+
+  transition:
+    transform .25s var(--ease),
+    box-shadow .25s var(--ease);
+}
+
+.submit::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  z-index:-1;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 30%,
+      rgba(255,255,255,.35) 48%,
+      transparent 66%
+    );
+
+  transform:translateX(-120%);
+
+  transition:
+    transform .6s var(--ease);
+}
+
+.submit:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 22px 50px var(--flame-glow);
+}
+
+.submit:hover::before{
+  transform:translateX(120%);
+}
+
+.submit:disabled{
+  opacity:.65;
+  cursor:not-allowed;
+  transform:none;
+}
+
+.small{
+  grid-column:1/-1;
+
+  text-align:center;
+
+  color:var(--muted);
+
+  font-size:11px;
+
+  line-height:1.5;
+}
+
+.field-error{
+  font-size:11px;
+
+  color:var(--flame);
+
+  min-height:14px;
+}
+
+/* =========================
+   SUCCESS
+   ========================= */
+
+.success{
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin-top:18px;
+
+  padding:15px 16px;
+
+  border-radius:14px;
+
+  background:rgba(127,224,184,.1);
+
+  border:1px solid rgba(127,224,184,.3);
+
+  color:#a8f0d3;
+
+  font-size:13px;
+
+  font-weight:600;
+
+  opacity:0;
+
+  transform:translateY(-6px);
+
+  height:0;
+
+  overflow:hidden;
+
+  transition:
+    opacity .35s var(--ease),
+    transform .35s var(--ease);
+}
+
+.success.show{
+  opacity:1;
+
+  transform:none;
+
+  height:auto;
+
+  padding:15px 16px;
+}
+
+.success::before{
+  content:"✓";
+
+  display:grid;
+
+  place-items:center;
+
+  width:20px;
+  height:20px;
+
+  border-radius:50%;
+
+  background:var(--mint);
+
+  color:#0a2417;
+
+  font-weight:900;
+
+  font-size:12px;
+
+  flex:none;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media(max-width:800px){
+
+  .grid{
+    grid-template-columns:1fr;
   }
 
-  a{text-decoration:none;color:inherit}
-  h1,h2{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.01em}
-
-  ::selection{background:var(--flame);color:#fff}
-  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
-
-  @media (prefers-reduced-motion: reduce){
-    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
-  }
-
-  /* HEADER */
-  .header{
-    height:78px;
-    background:rgba(9,11,17,.75);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--line);
-    display:flex;align-items:center;justify-content:space-between;
-    padding:0 clamp(20px,5vw,70px);
-    position:sticky;top:0;z-index:10;
-  }
-  .logo{display:flex;align-items:center;gap:12px;font-weight:800}
-  .logo-mark{
-    width:42px;height:42px;border-radius:13px;overflow:hidden;flex:none;
-    border:1px solid var(--line-strong);
-    box-shadow:0 8px 22px var(--flame-glow);
-  }
-  .logo-mark img{width:100%;height:100%;object-fit:cover;display:block}
-  .logo span:last-child{font-size:15px;font-family:"Fraunces",serif}
-  .header .insta{color:#f0aebb;font-weight:700;font-size:13px;transition:color .2s ease}
-  .header .insta:hover{color:var(--gold)}
-
-  .wrap{width:min(1080px,92%);margin:0 auto;padding:60px 0 80px}
-
-  .hero{text-align:center;max-width:760px;margin:0 auto 40px}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:8px;
-    background:rgba(224,64,95,.1);color:#f0aebb;
-    border:1px solid rgba(224,64,95,.4);border-radius:999px;padding:7px 14px 7px 10px;
-    font-size:12px;font-weight:700;
-  }
-  .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
-  .hero h1{font-size:clamp(32px,5.6vw,54px);line-height:1.04;letter-spacing:-.02em;margin:18px 0 12px;font-weight:600}
-  .hero h1 .accent{
-    font-style:italic;font-weight:600;
-    background:linear-gradient(95deg,var(--gold) 0%,var(--flame) 60%,#f3c5d0 100%);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-  }
-  .hero p{color:var(--muted);font-size:15.5px;line-height:1.75}
-
-  .grid{display:grid;grid-template-columns:.82fr 1.45fr;gap:22px;align-items:start}
-
-  .card{
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-radius:24px;
-    box-shadow:var(--shadow);
-    overflow:hidden;
-  }
-
-  /* SELECTED SERVICE PANEL */
   .selected{
-    background:
-      radial-gradient(circle at 100% 0%, rgba(231,179,79,.16), transparent 45%),
-      linear-gradient(150deg,var(--flame-deep),#3a0d1c);
-    color:#fff;padding:30px;min-height:340px;
-    position:relative;isolation:isolate;
-  }
-  .selected:after{
-    content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-90px;bottom:-100px;
-    background:rgba(255,255,255,.06);z-index:-1;
-  }
-  .selected .tag{color:#ffd7e0;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
-  .selected h2{font-size:28px;line-height:1.1;margin:18px 0 10px;font-weight:600;
-    opacity:0;transform:translateY(6px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
-  .selected h2.ready{opacity:1;transform:none}
-  .selected p{color:#f8dfe5;line-height:1.65;font-size:13.5px}
-
-  .details{margin-top:26px;display:grid;gap:12px}
-  .detail{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#fff}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);margin-top:6px;flex:none}
-
-  .tag{
-    display:inline-block;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--gold);
-    border-radius:999px;padding:7px 11px;font-size:10.5px;font-weight:700;letter-spacing:.04em;
+    min-height:auto;
   }
 
-  /* FORM */
-  .form-card{padding:32px}
-  .form-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:26px}
-  .form-head h2{font-size:24px;letter-spacing:-.02em;font-weight:600}
-  .form-head p{font-size:13px;color:var(--muted);margin-top:5px}
+}
 
-  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-  .field{display:flex;flex-direction:column;gap:7px}
-  .field.full{grid-column:1/-1}
-  label{font-size:12px;font-weight:700;color:var(--text-soft)}
+@media(max-width:600px){
 
-  input,select,textarea{
-    width:100%;border:1px solid var(--line-strong);background:var(--panel-2);
-    border-radius:13px;padding:13px 14px;font:inherit;color:var(--text);outline:none;
-    transition:border-color .2s ease, box-shadow .2s ease;
+  .wrap{
+    padding-top:40px;
   }
-  input::placeholder,textarea::placeholder{color:#5f6779}
-  input:focus,select:focus,textarea:focus{
-    border-color:var(--gold);box-shadow:0 0 0 4px rgba(231,179,79,.12);
-  }
-  select{ color-scheme: dark; }
-  textarea{min-height:105px;resize:vertical}
 
-  .service-box{
-    grid-column:1/-1;padding:15px;border-radius:16px;
-    background:rgba(255,255,255,.03);border:1px solid var(--line);
+  .form-grid{
+    grid-template-columns:1fr;
   }
-  .service-box .service-label{font-size:12px;font-weight:700;margin-bottom:9px;color:var(--text-soft)}
-  .price-note{font-size:11px;color:var(--muted);margin-top:8px}
 
-  .submit{
-    grid-column:1/-1;border:0;border-radius:14px;padding:16px 18px;
-    background:linear-gradient(135deg,var(--flame-deep),var(--flame));
-    color:#fff;font-weight:700;font-size:15px;cursor:pointer;
-    box-shadow:0 16px 40px var(--flame-glow);
-    position:relative;overflow:hidden;isolation:isolate;
-    transition:transform .25s var(--ease), box-shadow .25s var(--ease);
+  .field.full,
+  .service-box,
+  .submit,
+  .small{
+    grid-column:auto;
   }
-  .submit::before{
-    content:"";position:absolute;inset:0;z-index:-1;
-    background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 48%,transparent 66%);
-    transform:translateX(-120%);transition:transform .6s var(--ease);
-  }
-  .submit:hover{transform:translateY(-2px);box-shadow:0 22px 50px var(--flame-glow)}
-  .submit:hover::before{transform:translateX(120%)}
-  .submit:disabled{opacity:.65;cursor:not-allowed;transform:none}
 
-  .small{grid-column:1/-1;text-align:center;color:var(--muted);font-size:11px;line-height:1.5}
-
-  .field-error{font-size:11px;color:var(--flame);min-height:14px}
-
-  .success{
-    display:flex;align-items:center;gap:10px;
-    margin-top:18px;padding:15px 16px;border-radius:14px;
-    background:rgba(127,224,184,.1);border:1px solid rgba(127,224,184,.3);color:#a8f0d3;
-    font-size:13px;font-weight:600;
-    opacity:0;transform:translateY(-6px);height:0;overflow:hidden;
-    transition:opacity .35s var(--ease), transform .35s var(--ease);
+  .form-card{
+    padding:22px;
   }
-  .success.show{opacity:1;transform:none;height:auto;padding:15px 16px}
-  .success::before{content:"✓";display:grid;place-items:center;width:20px;height:20px;border-radius:50%;
-    background:var(--mint);color:#0a2417;font-weight:900;font-size:12px;flex:none}
 
-  @media(max-width:800px){
-    .grid{grid-template-columns:1fr}
-    .selected{min-height:auto}
+  .header{
+    padding:0 18px;
   }
-  @media(max-width:600px){
-    .wrap{padding-top:40px}
-    .form-grid{grid-template-columns:1fr}
-    .field.full,.service-box,.submit,.small{grid-column:auto}
-    .form-card{padding:22px}
-    .header{padding:0 18px}
-    .header .insta{font-size:12px}
+
+  .header .insta{
+    font-size:12px;
   }
+
+  .selected{
+    padding:24px;
+  }
+
+  .form-head{
+    flex-direction:column;
+  }
+
+}
+
 </style>
 </head>
+
 <body>
+
 <header class="header">
+
   <a href="index.html" class="logo">
-    <span class="logo-mark"><img src="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg" alt="Auto Smarty Pie logo" width="42" height="42"></span><span>Auto Smarty Pie</span>
+
+    <span class="logo-mark">
+
+      <img
+        src="https://raw.githubusercontent.com/NOCTIVINE1/auto-smarty-pie/main/auto.jpg"
+        alt="Auto Smarty Pie logo"
+        width="42"
+        height="42">
+
+    </span>
+
+    <span>
+      Auto Smarty Pie
+    </span>
+
   </a>
-  <a class="insta" href="https://www.instagram.com/auto_smarty_pie/" target="_blank" rel="noopener">@auto_smarty_pie ↗</a>
+
+  <a
+    class="insta"
+    href="https://www.instagram.com/auto_smarty_pie/"
+    target="_blank"
+    rel="noopener">
+
+    @auto_smarty_pie ↗
+
+  </a>
+
 </header>
 
+
 <main class="wrap">
+
+  <!-- HERO -->
+
   <section class="hero">
-    <span class="eyebrow">Start your enquiry</span>
-    <h1>Let's build the right <span class="accent">growth setup.</span></h1>
-    <p>Your selected service is carried into this form automatically. Just add your business details and we'll take it from there.</p>
+
+    <span class="eyebrow">
+      Start your enquiry
+    </span>
+
+    <h1>
+      Let's build the right
+      <span class="accent">
+        growth setup.
+      </span>
+    </h1>
+
+    <p>
+      Your selected service is carried into this form automatically.
+      Just add your business details and we'll take it from there.
+    </p>
+
   </section>
+
+
+  <!-- MAIN GRID -->
 
   <section class="grid">
+
+    <!-- SELECTED SERVICE -->
+
     <aside class="card selected">
-      <span class="tag">Selected from website</span>
-      <h2 id="selectedTitle">Your selected service</h2>
-      <p id="selectedDesc">We'll use the service or package you selected on the Auto Smarty Pie website.</p>
+
+      <span class="tag">
+        Selected from website
+      </span>
+
+      <h2 id="selectedTitle">
+        Your selected service
+      </h2>
+
+      <p id="selectedDesc">
+        We'll use the service or package you selected on the
+        Auto Smarty Pie website.
+      </p>
+
       <div class="details">
-        <div class="detail"><span class="dot"></span><span>Personalised recommendation based on your business</span></div>
-        <div class="detail"><span class="dot"></span><span>Simple next-step discussion over WhatsApp or call</span></div>
-        <div class="detail"><span class="dot"></span><span>No payment is required through this form</span></div>
+
+        <div class="detail">
+          <span class="dot"></span>
+          <span>
+            Personalised recommendation based on your business
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="dot"></span>
+          <span>
+            Simple next-step discussion over WhatsApp or call
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="dot"></span>
+          <span>
+            No payment is required through this form
+          </span>
+        </div>
+
       </div>
+
     </aside>
 
+
+    <!-- FORM CARD -->
+
     <div class="card form-card">
+
       <div class="form-head">
+
         <div>
-          <h2>Business enquiry</h2>
-          <p>Tell us the basics so we can contact you.</p>
+
+          <h2>
+            Business enquiry
+          </h2>
+
+          <p>
+            Tell us the basics so we can contact you.
+          </p>
+
         </div>
-        <span class="tag">2 minutes</span>
+
+        <span class="tag">
+          2 minutes
+        </span>
+
       </div>
 
-      <form id="enquiryForm" novalidate>
+
+      <form
+        id="enquiryForm"
+        novalidate>
+
         <div class="form-grid">
+
+          <!-- NAME -->
+
           <div class="field">
-            <label for="name">Your name *</label>
-            <input id="name" name="name" type="text" placeholder="Full name" required autocomplete="name">
-            <span class="field-error" id="err-name"></span>
+
+            <label for="name">
+              Your name *
+            </label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Full name"
+              required
+              autocomplete="name">
+
+            <span
+              class="field-error"
+              id="err-name">
+            </span>
+
           </div>
+
+
+          <!-- MOBILE -->
+
           <div class="field">
-            <label for="mobile">Mobile / WhatsApp *</label>
-            <input id="mobile" name="mobile" type="tel" placeholder="10-digit mobile number" required inputmode="numeric" autocomplete="tel">
-            <span class="field-error" id="err-mobile"></span>
+
+            <label for="mobile">
+              Mobile / WhatsApp *
+            </label>
+
+            <input
+              id="mobile"
+              name="mobile"
+              type="tel"
+              placeholder="10-digit mobile number"
+              required
+              inputmode="numeric"
+              autocomplete="tel">
+
+            <span
+              class="field-error"
+              id="err-mobile">
+            </span>
+
           </div>
+
+
+          <!-- BUSINESS -->
+
           <div class="field">
-            <label for="business">Business name</label>
-            <input id="business" name="business" type="text" placeholder="Your business name" autocomplete="organization">
+
+            <label for="business">
+              Business name
+            </label>
+
+            <input
+              id="business"
+              name="business"
+              type="text"
+              placeholder="Your business name"
+              autocomplete="organization">
+
           </div>
+
+
+          <!-- BUSINESS TYPE -->
+
           <div class="field">
-            <label for="type">Business type *</label>
-            <select id="type" name="type" required>
-              <option value="">Select business type</option>
-              <option>Café / Restaurant</option>
-              <option>Hotel / Resort</option>
-              <option>Gym / Fitness Studio</option>
-              <option>Salon / Beauty</option>
-              <option>Clinic / Healthcare</option>
-              <option>Car Accessories / Detailing</option>
-              <option>Retail / Shop</option>
-              <option>Local Service Business</option>
-              <option>Other</option>
+
+            <label for="type">
+              Business type *
+            </label>
+
+            <select
+              id="type"
+              name="type"
+              required>
+
+              <option value="">
+                Select business type
+              </option>
+
+              <option>
+                Café / Restaurant
+              </option>
+
+              <option>
+                Hotel / Resort
+              </option>
+
+              <option>
+                Gym / Fitness Studio
+              </option>
+
+              <option>
+                Salon / Beauty
+              </option>
+
+              <option>
+                Clinic / Healthcare
+              </option>
+
+              <option>
+                Car Accessories / Detailing
+              </option>
+
+              <option>
+                Retail / Shop
+              </option>
+
+              <option>
+                Local Service Business
+              </option>
+
+              <option>
+                Other
+              </option>
+
             </select>
-            <span class="field-error" id="err-type"></span>
+
+            <span
+              class="field-error"
+              id="err-type">
+            </span>
+
           </div>
+
+
+          <!-- LOCATION -->
+
           <div class="field full">
-            <label for="location">Business location *</label>
-            <input id="location" name="location" type="text" placeholder="City / area" required autocomplete="address-level2">
-            <span class="field-error" id="err-location"></span>
+
+            <label for="location">
+              Business location *
+            </label>
+
+            <input
+              id="location"
+              name="location"
+              type="text"
+              placeholder="City / area"
+              required
+              autocomplete="address-level2">
+
+            <span
+              class="field-error"
+              id="err-location">
+            </span>
+
           </div>
+
+
+          <!-- SERVICE -->
 
           <div class="service-box">
-            <div class="service-label">Service / package *</div>
-            <select id="service" name="service" required>
-              <option value="">Select a service or package</option>
+
+            <div class="service-label">
+              Service / package *
+            </div>
+
+            <select
+              id="service"
+              name="service"
+              required>
+
+              <option value="">
+                Select a service or package
+              </option>
+
+
+              <!-- VIDEO -->
+
+              <optgroup label="Video Content">
+
+                <option value="VIDEO REEL">
+                  Single Reel — ₹500
+                </option>
+
+                <option value="LONG VIDEO">
+                  Long Video — ₹1,999
+                </option>
+
+                <option value="VIDEO STARTER">
+                  Content Starter — ₹7,999/month
+                </option>
+
+                <option value="VIDEO GROWTH">
+                  Business Content — ₹10,000/month
+                  (15 Reels + 5 Long Videos)
+                </option>
+
+                <option value="VIDEO PRO">
+                  Content Pro — ₹15,000/month
+                  (20 Reels + 8 Long Videos)
+                </option>
+
+              </optgroup>
+
+
+              <!-- WEBSITE -->
+
               <optgroup label="Website & Online Presence">
-                <option value="WEBSITE">Website — ₹3,999+</option>
-                <option value="GOOGLE BUSINESS PROFILE">Google Business Profile — ₹1,499 setup</option>
-                <option value="LOCAL SEO">Local SEO — ₹2,499 setup</option>
-                <option value="MONTHLY SEO">Monthly SEO — ₹2,500/month</option>
+
+                <option value="WEBSITE">
+                  Website — ₹3,999+
+                </option>
+
+                <option value="GOOGLE BUSINESS PROFILE">
+                  Google Business Profile — ₹1,499 setup
+                </option>
+
+                <option value="LOCAL SEO">
+                  Local SEO — ₹2,499 setup
+                </option>
+
+                <option value="MONTHLY SEO">
+                  Monthly SEO — ₹2,500/month
+                </option>
+
               </optgroup>
+
+
+              <!-- MARKETING -->
+
               <optgroup label="Marketing & Leads">
-                <option value="GOOGLE ADS">Google Ads — ₹2,999 setup</option>
-                <option value="SOCIAL MEDIA">Social Media Setup — ₹999</option>
-                <option value="ENQUIRY FORM">Enquiry Form — ₹499+</option>
-                <option value="BOOKING FORM">Booking Form — ₹999</option>
-                <option value="REVIEW COLLECTION">Review Collection — ₹999</option>
-                <option value="PROMOTIONAL DESIGNS">Promotional Designs — ₹399+</option>
+
+                <option value="GOOGLE ADS">
+                  Google Ads — ₹2,999 setup
+                </option>
+
+                <option value="SOCIAL MEDIA">
+                  Social Media Setup — ₹999
+                </option>
+
+                <option value="ENQUIRY FORM">
+                  Enquiry Form — ₹499+
+                </option>
+
+                <option value="BOOKING FORM">
+                  Booking Form — ₹999
+                </option>
+
+                <option value="REVIEW COLLECTION">
+                  Review Collection — ₹999
+                </option>
+
+                <option value="PROMOTIONAL DESIGNS">
+                  Promotional Designs — ₹399+
+                </option>
+
               </optgroup>
+
+
+              <!-- BUSINESS TOOLS -->
+
               <optgroup label="Business Tools">
-                <option value="SHOP SOFTWARE">Shop Management Software — ₹2,999+</option>
+
+                <option value="SHOP SOFTWARE">
+                  Shop Management Software — ₹2,999+
+                </option>
+
               </optgroup>
+
+
+              <!-- PACKAGES -->
+
               <optgroup label="Complete Packages">
-                <option value="START">Essential — ₹6,999 one-time</option>
-                <option value="GROW">Growth — ₹9,999 + ₹2,500/month</option>
-                <option value="LEAD">Accelerate — ₹14,999 + ₹3,500/month</option>
-                <option value="GROWTH PRO">Scale — ₹19,999 + ₹7,999/month</option>
+
+                <option value="START">
+                  Essential — ₹6,999 one-time
+                </option>
+
+                <option value="GROW">
+                  Growth — ₹9,999 + ₹2,500/month
+                </option>
+
+                <option value="LEAD">
+                  Accelerate — ₹14,999 + ₹3,500/month
+                </option>
+
+                <option value="GROWTH PRO">
+                  Scale — ₹19,999 + ₹7,999/month
+                </option>
+
               </optgroup>
+
             </select>
-            <div class="price-note">Your selection from the previous page is automatically selected here. You can change it if needed.</div>
-            <span class="field-error" id="err-service"></span>
+
+            <div class="price-note">
+              Your selection from the previous page is automatically
+              selected here. You can change it if needed.
+            </div>
+
+            <span
+              class="field-error"
+              id="err-service">
+            </span>
+
           </div>
+
+
+          <!-- VIDEO FIELDS -->
+
+          <div
+            class="service-box"
+            id="videoFields"
+            style="display:none;">
+
+            <div class="service-label">
+              Video project details
+            </div>
+
+            <div
+              class="form-grid"
+              style="margin-top:10px;">
+
+              <!-- CONTENT TYPE -->
+
+              <div class="field">
+
+                <label for="contentType">
+                  Content type
+                </label>
+
+                <select
+                  id="contentType"
+                  name="contentType">
+
+                  <option value="">
+                    Select content type
+                  </option>
+
+                  <option>
+                    Product showcase
+                  </option>
+
+                  <option>
+                    Service showcase
+                  </option>
+
+                  <option>
+                    Offer / promotional video
+                  </option>
+
+                  <option>
+                    Business introduction
+                  </option>
+
+                  <option>
+                    Product demonstration
+                  </option>
+
+                  <option>
+                    Instagram / Facebook Reel
+                  </option>
+
+                  <option>
+                    YouTube video
+                  </option>
+
+                  <option>
+                    Other
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <!-- PRODUCTS -->
+
+              <div class="field">
+
+                <label for="products">
+                  Products / services to shoot
+                </label>
+
+                <input
+                  id="products"
+                  name="products"
+                  type="text"
+                  placeholder="e.g. 5 products / 2 services">
+
+              </div>
+
+
+              <!-- SHOOT LOCATION -->
+
+              <div class="field">
+
+                <label for="shootLocation">
+                  Shoot location
+                </label>
+
+                <input
+                  id="shootLocation"
+                  name="shootLocation"
+                  type="text"
+                  placeholder="Shop / office / studio / area">
+
+              </div>
+
+
+              <!-- SHOOT DATE -->
+
+              <div class="field">
+
+                <label for="shootDate">
+                  Preferred shoot date
+                </label>
+
+                <input
+                  id="shootDate"
+                  name="shootDate"
+                  type="date">
+
+              </div>
+
+
+              <!-- SOCIAL LINK -->
+
+              <div class="field full">
+
+                <label for="socialLink">
+                  Instagram / YouTube / website link
+                </label>
+
+                <input
+                  id="socialLink"
+                  name="socialLink"
+                  type="url"
+                  placeholder="https://...">
+
+              </div>
+
+            </div>
+
+            <div class="price-note">
+              For video work, travel outside the agreed area,
+              actors/models, special locations, props and paid
+              assets may cost extra.
+            </div>
+
+          </div>
+
+
+          <!-- MESSAGE -->
 
           <div class="field full">
-            <label for="message">Anything else we should know?</label>
-            <textarea id="message" name="message" placeholder="Your goal, current problem, website, Instagram, or anything useful"></textarea>
+
+            <label for="message">
+              Anything else we should know?
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your goal, current problem, website, Instagram, or anything useful"></textarea>
+
           </div>
 
-          <button class="submit" type="submit" id="submitBtn">Get My Growth Plan on WhatsApp →</button>
-          <div class="small">By submitting, you'll be redirected to WhatsApp with your enquiry details ready to send.</div>
+
+          <!-- SUBMIT -->
+
+          <button
+            class="submit"
+            type="submit"
+            id="submitBtn">
+
+            Get My Growth Plan on WhatsApp →
+
+          </button>
+
+
+          <div class="small">
+            By submitting, you'll be redirected to WhatsApp with
+            your enquiry details ready to send.
+          </div>
+
         </div>
+
       </form>
-      <div id="success" class="success">Your WhatsApp message is being prepared.</div>
+
+
+      <div
+        id="success"
+        class="success">
+
+        Your WhatsApp message is being prepared.
+
+      </div>
+
     </div>
+
   </section>
+
 </main>
 
+
 <script>
-const params = new URLSearchParams(window.location.search);
-const raw = params.get("service") || params.get("package") || "";
+
+/* =========================
+   URL PARAMETERS
+   ========================= */
+
+const params =
+  new URLSearchParams(
+    window.location.search
+  );
+
+const raw =
+  params.get("service") ||
+  params.get("package") ||
+  "";
+
+
+/* =========================
+   SERVICE CATALOG
+   ========================= */
 
 const catalog = {
-  "START":"Essential — ₹6,999 one-time",
-  "GROW":"Growth — ₹9,999 + ₹2,500/month",
-  "LEAD":"Accelerate — ₹14,999 + ₹3,500/month",
-  "GROWTH PRO":"Scale — ₹19,999 + ₹7,999/month",
-  "WEBSITE":"Website — ₹3,999+",
-  "GOOGLE BUSINESS PROFILE":"Google Business Profile — ₹1,499 setup",
-  "LOCAL SEO":"Local SEO — ₹2,499 setup",
-  "MONTHLY SEO":"Monthly SEO — ₹2,500/month",
-  "GOOGLE ADS":"Google Ads — ₹2,999 setup",
-  "SOCIAL MEDIA":"Social Media Setup — ₹999",
-  "ENQUIRY FORM":"Enquiry Form — ₹499+",
-  "BOOKING FORM":"Booking Form — ₹999",
-  "REVIEW COLLECTION":"Review Collection — ₹999",
-  "SHOP SOFTWARE":"Shop Management Software — ₹2,999+",
-  "PROMOTIONAL DESIGNS":"Promotional Designs — ₹399+"
+
+  "START":
+    "Essential — ₹6,999 one-time",
+
+  "GROW":
+    "Growth — ₹9,999 + ₹2,500/month",
+
+  "LEAD":
+    "Accelerate — ₹14,999 + ₹3,500/month",
+
+  "GROWTH PRO":
+    "Scale — ₹19,999 + ₹7,999/month",
+
+
+  /* VIDEO */
+
+  "VIDEO CONTENT":
+    "Product & Business Video Content",
+
+  "VIDEO REEL":
+    "Single Reel — ₹500",
+
+  "LONG VIDEO":
+    "Long Video — ₹1,999",
+
+  "VIDEO STARTER":
+    "Content Starter — ₹7,999/month",
+
+  "VIDEO GROWTH":
+    "Business Content — ₹10,000/month (15 Reels + 5 Long Videos)",
+
+  "VIDEO PRO":
+    "Content Pro — ₹15,000/month (20 Reels + 8 Long Videos)",
+
+
+  /* OTHER SERVICES */
+
+  "WEBSITE":
+    "Website — ₹3,999+",
+
+  "GOOGLE BUSINESS PROFILE":
+    "Google Business Profile — ₹1,499 setup",
+
+  "LOCAL SEO":
+    "Local SEO — ₹2,499 setup",
+
+  "MONTHLY SEO":
+    "Monthly SEO — ₹2,500/month",
+
+  "GOOGLE ADS":
+    "Google Ads — ₹2,999 setup",
+
+  "SOCIAL MEDIA":
+    "Social Media Setup — ₹999",
+
+  "ENQUIRY FORM":
+    "Enquiry Form — ₹499+",
+
+  "BOOKING FORM":
+    "Booking Form — ₹999",
+
+  "REVIEW COLLECTION":
+    "Review Collection — ₹999",
+
+  "SHOP SOFTWARE":
+    "Shop Management Software — ₹2,999+",
+
+  "PROMOTIONAL DESIGNS":
+    "Promotional Designs — ₹399+"
+
 };
 
+
+/* =========================
+   NORMALISE
+   ========================= */
+
 function normalise(v){
-  return decodeURIComponent(v).replace(/\+/g," ").trim().toUpperCase();
-}
-const key = normalise(raw);
-const serviceSelect = document.getElementById("service");
-const selectedKey = key && catalog[key] ? key : "";
 
-if (selectedKey && serviceSelect.querySelector('option[value="' + CSS.escape(selectedKey) + '"]')) {
-  serviceSelect.value = selectedKey;
+  return decodeURIComponent(v)
+    .replace(/\+/g," ")
+    .trim()
+    .toUpperCase();
+
 }
 
-const selectedTitleEl = document.getElementById("selectedTitle");
-const selectedDescEl = document.getElementById("selectedDesc");
-const selectedDisplay = selectedKey ? catalog[selectedKey] : "Not selected";
 
-selectedTitleEl.textContent = selectedKey ? selectedDisplay.split(" — ")[0] : "Choose a service";
-selectedDescEl.textContent = selectedKey
-  ? "This is the service or package you selected from the Auto Smarty Pie website."
-  : "Choose the service or package you need from the form.";
+/* =========================
+   INITIAL SERVICE
+   ========================= */
 
-requestAnimationFrame(function(){ selectedTitleEl.classList.add("ready"); });
+const key =
+  normalise(raw);
 
-/* keep the summary panel in sync if the visitor changes the dropdown themselves */
-serviceSelect.addEventListener("change", function(){
-  const v = serviceSelect.value;
-  const display = v ? (catalog[v] || v) : "Not selected";
-  selectedTitleEl.textContent = v ? display.split(" — ")[0] : "Choose a service";
-  selectedDescEl.textContent = v
-    ? "This is the service or package currently selected on this form."
+const serviceSelect =
+  document.getElementById("service");
+
+const videoFields =
+  document.getElementById("videoFields");
+
+const selectedKey =
+  key && catalog[key]
+    ? key
+    : "";
+
+
+/* =========================
+   VIDEO SERVICE CHECK
+   ========================= */
+
+function isVideoService(value){
+
+  return [
+    "VIDEO CONTENT",
+    "VIDEO REEL",
+    "LONG VIDEO",
+    "VIDEO STARTER",
+    "VIDEO GROWTH",
+    "VIDEO PRO"
+  ].includes(value);
+
+}
+
+
+/* =========================
+   SHOW / HIDE VIDEO FIELDS
+   ========================= */
+
+function updateVideoFields(){
+
+  if (
+    isVideoService(
+      serviceSelect.value
+    )
+  ){
+
+    videoFields.style.display =
+      "block";
+
+  }else{
+
+    videoFields.style.display =
+      "none";
+
+  }
+
+}
+
+
+/* =========================
+   SELECT URL SERVICE
+   ========================= */
+
+if(
+  selectedKey &&
+  serviceSelect.querySelector(
+    'option[value="' +
+    CSS.escape(selectedKey) +
+    '"]'
+  )
+){
+
+  serviceSelect.value =
+    selectedKey;
+
+}
+
+
+/* =========================
+   INITIAL VIDEO CHECK
+   ========================= */
+
+updateVideoFields();
+
+
+/* =========================
+   SELECTED PANEL
+   ========================= */
+
+const selectedTitleEl =
+  document.getElementById(
+    "selectedTitle"
+  );
+
+const selectedDescEl =
+  document.getElementById(
+    "selectedDesc"
+  );
+
+const selectedDisplay =
+  selectedKey
+    ? catalog[selectedKey]
+    : "Not selected";
+
+
+selectedTitleEl.textContent =
+  selectedKey
+    ? selectedDisplay.split(" — ")[0]
+    : "Choose a service";
+
+
+selectedDescEl.textContent =
+  selectedKey
+
+    ? (
+        isVideoService(selectedKey)
+
+        ? "Video content service selected. Add your shoot and content requirements below."
+
+        : "This is the service or package you selected from the Auto Smarty Pie website."
+      )
+
     : "Choose the service or package you need from the form.";
-});
 
-/* lightweight validation with inline messages, no alerts */
-const form = document.getElementById("enquiryForm");
-const submitBtn = document.getElementById("submitBtn");
 
-function setError(id, message){
-  const el = document.getElementById("err-" + id);
-  if (el) { el.textContent = message || ""; }
+requestAnimationFrame(
+  function(){
+
+    selectedTitleEl.classList.add(
+      "ready"
+    );
+
+  }
+);
+
+
+/* =========================
+   DROPDOWN CHANGE
+   ========================= */
+
+serviceSelect.addEventListener(
+  "change",
+  function(){
+
+    const v =
+      serviceSelect.value;
+
+    const display =
+      v
+        ? (catalog[v] || v)
+        : "Not selected";
+
+
+    selectedTitleEl.textContent =
+      v
+        ? display.split(" — ")[0]
+        : "Choose a service";
+
+
+    selectedDescEl.textContent =
+      v
+
+        ? (
+            isVideoService(v)
+
+            ? "Video content service selected. Add your shoot and content requirements below."
+
+            : "This is the service or package currently selected on this form."
+          )
+
+        : "Choose the service or package you need from the form.";
+
+
+    updateVideoFields();
+
+  }
+);
+
+
+/* =========================
+   FORM
+   ========================= */
+
+const form =
+  document.getElementById(
+    "enquiryForm"
+  );
+
+const submitBtn =
+  document.getElementById(
+    "submitBtn"
+  );
+
+
+/* =========================
+   ERROR
+   ========================= */
+
+function setError(
+  id,
+  message
+){
+
+  const el =
+    document.getElementById(
+      "err-" + id
+    );
+
+  if(el){
+
+    el.textContent =
+      message || "";
+
+  }
+
 }
+
+
+/* =========================
+   VALIDATION
+   ========================= */
 
 function validate(data){
+
   let ok = true;
 
-  if (!data.get("name") || data.get("name").trim().length < 2) {
-    setError("name", "Please enter your name.");
-    ok = false;
-  } else { setError("name", ""); }
 
-  const mobile = (data.get("mobile") || "").replace(/\D/g, "");
-  if (mobile.length < 10) {
-    setError("mobile", "Enter a valid 10-digit mobile number.");
-    ok = false;
-  } else { setError("mobile", ""); }
+  /* NAME */
 
-  if (!data.get("type")) {
-    setError("type", "Please select a business type.");
-    ok = false;
-  } else { setError("type", ""); }
+  if(
+    !data.get("name") ||
+    data.get("name")
+      .trim()
+      .length < 2
+  ){
 
-  if (!data.get("location") || data.get("location").trim().length < 2) {
-    setError("location", "Please enter your city or area.");
-    ok = false;
-  } else { setError("location", ""); }
+    setError(
+      "name",
+      "Please enter your name."
+    );
 
-  if (!data.get("service")) {
-    setError("service", "Please select a service or package.");
     ok = false;
-  } else { setError("service", ""); }
+
+  }else{
+
+    setError(
+      "name",
+      ""
+    );
+
+  }
+
+
+  /* MOBILE */
+
+  const mobile =
+    (
+      data.get("mobile") ||
+      ""
+    ).replace(
+      /\D/g,
+      ""
+    );
+
+
+  if(
+    mobile.length < 10
+  ){
+
+    setError(
+      "mobile",
+      "Enter a valid 10-digit mobile number."
+    );
+
+    ok = false;
+
+  }else{
+
+    setError(
+      "mobile",
+      ""
+    );
+
+  }
+
+
+  /* BUSINESS TYPE */
+
+  if(
+    !data.get("type")
+  ){
+
+    setError(
+      "type",
+      "Please select a business type."
+    );
+
+    ok = false;
+
+  }else{
+
+    setError(
+      "type",
+      ""
+    );
+
+  }
+
+
+  /* LOCATION */
+
+  if(
+    !data.get("location") ||
+    data.get("location")
+      .trim()
+      .length < 2
+  ){
+
+    setError(
+      "location",
+      "Please enter your city or area."
+    );
+
+    ok = false;
+
+  }else{
+
+    setError(
+      "location",
+      ""
+    );
+
+  }
+
+
+  /* SERVICE */
+
+  if(
+    !data.get("service")
+  ){
+
+    setError(
+      "service",
+      "Please select a service or package."
+    );
+
+    ok = false;
+
+  }else{
+
+    setError(
+      "service",
+      ""
+    );
+
+  }
+
 
   return ok;
+
 }
 
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  const data = new FormData(form);
 
-  if (!validate(data)) { return; }
+/* =========================
+   SUBMIT
+   ========================= */
 
-  submitBtn.disabled = true;
-  submitBtn.textContent = "Preparing WhatsApp message...";
+form.addEventListener(
+  "submit",
+  function(e){
 
-  const message =
+    e.preventDefault();
+
+
+    const data =
+      new FormData(form);
+
+
+    if(
+      !validate(data)
+    ){
+
+      return;
+
+    }
+
+
+    submitBtn.disabled =
+      true;
+
+    submitBtn.textContent =
+      "Preparing WhatsApp message...";
+
+
+    /* =========================
+       WHATSAPP MESSAGE
+       ========================= */
+
+    const message =
+
 `*AUTO SMARTY PIE — NEW ENQUIRY*
 
 Name: ${data.get("name")}
+
 Mobile / WhatsApp: ${data.get("mobile")}
+
 Business: ${data.get("business") || "Not provided"}
+
 Business Type: ${data.get("type")}
+
 Location: ${data.get("location")}
-Service / Package: ${data.get("service") ? (catalog[data.get("service")] || data.get("service")) : "Not selected"}
-Message: ${data.get("message") || "Not provided"}
+
+Service / Package: ${
+  data.get("service")
+    ? (
+        catalog[data.get("service")]
+        ||
+        data.get("service")
+      )
+    : "Not selected"
+}
+
+Content Type: ${
+  data.get("contentType")
+  || "Not provided"
+}
+
+Products / Services to Shoot: ${
+  data.get("products")
+  || "Not provided"
+}
+
+Shoot Location: ${
+  data.get("shootLocation")
+  || "Not provided"
+}
+
+Preferred Shoot Date: ${
+  data.get("shootDate")
+  || "Not provided"
+}
+
+Social / Website Link: ${
+  data.get("socialLink")
+  || "Not provided"
+}
+
+Message: ${
+  data.get("message")
+  || "Not provided"
+}
 
 Website: autosmartypie.in
+
 Instagram: @auto_smarty_pie`;
 
-  document.getElementById("success").classList.add("show");
-  window.open("https://wa.me/918528077325?text=" + encodeURIComponent(message), "_blank");
 
-  setTimeout(function(){
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Get My Growth Plan on WhatsApp →";
-  }, 1800);
-});
+    /* =========================
+       SUCCESS
+       ========================= */
+
+    document
+      .getElementById("success")
+      .classList
+      .add("show");
+
+
+    /* =========================
+       WHATSAPP OPEN
+       ========================= */
+
+    window.open(
+      "https://wa.me/918528077325?text=" +
+      encodeURIComponent(message),
+      "_blank"
+    );
+
+
+    /* =========================
+       RESET BUTTON
+       ========================= */
+
+    setTimeout(
+      function(){
+
+        submitBtn.disabled =
+          false;
+
+        submitBtn.textContent =
+          "Get My Growth Plan on WhatsApp →";
+
+      },
+      1800
+    );
+
+  }
+);
+
 </script>
+
 </body>
 </html>
